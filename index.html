@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Swapi app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <main class="catalog">
+        <div class="catalog__heading">
+          <img src="img/starWars.png" alt="" style= "width: 150px">
+        
+            <div class="catalog__buttonPages">
+            <button id="prev">prev</button>
+            <select class="pagination" name="pagination" id="pagination">
+            </select>
+            <button id="next">next</button>
+          </div>
+          <div class="catalog__pageNumber">
+            <p>Page number: </p> 
+            <p style="visibility: hidden;">""</p>
+            <strong id="pageNr">1</strong>
+          </div>
+          <div class="catalog__numberResults">
+          <select class="select-type" name="select-type" id="select-type">
+            <option value="people" selected>People</option>
+            <option value="planets">Planets</option>
+            <option value="species">Species</option>
+            <option value="starships">Starships</option>
+            <option value="vehicles">Vehicles</option>
+          </select>
+           <p style="visibility: hidden;">""</p>
+            <p>Element results: </p>
+            <p style="visibility: hidden;">""</p>
+            <strong id="resultNumber"></strong>
+          </div>
+        </div>
+        <th></th>
+        <table class="catalog__content">
+        </table>
+      </br>
+    </br>
+      </main>
+    <script src="index.js"></script>
+  </body>
+</html>
